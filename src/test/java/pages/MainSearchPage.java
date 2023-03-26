@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 
 public class MainSearchPage {
-    private SelenideElement hotelInput = $(By.name("ss"));   //input[@name='ss']
+    private SelenideElement hotelInput = $(By.name("ss"));
     private SelenideElement searchButton = $(By.xpath("//span[text()='Search']/parent::button"));
 
     public void inputHotel(String hotel) {
