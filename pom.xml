@@ -13,6 +13,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <testng.version>7.1.0</testng.version>
         <selenide.version>6.12.3</selenide.version>
+        <cucumber.version>7.11.0</cucumber.version>
     </properties>
 
     <dependencies>
@@ -21,11 +22,30 @@
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
             <scope>test</scope>
+
         </dependency>
         <dependency>
             <groupId>com.codeborne</groupId>
             <artifactId>selenide</artifactId>
             <version>${selenide.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
         </dependency>
     </dependencies>
 
